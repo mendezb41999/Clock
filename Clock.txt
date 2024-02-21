@@ -1,0 +1,8 @@
+public class Clock{
+
+public ShapeIcon icon = new ShapeIcon(shape, 600, 600);
+Point2D.Double endSecond = new Point2D.Double(300 + 110*Math.cos(theta), 300 + 110*Math.sin(theta));
+Point2D.Double endMinuet = new Point2D.Double(200 + 110*Math.sin(theta), 200 + 110*Math.sin(theta));
+Point2D.Double endHour = new Point2D.Double(100 + 110*Math.cos(theta), 100 + 110*Math.sin(theta));
+Shape seconds = new Line2D.Double(origin, endSecond);
+g2.setStroke(new BasicStroke(3)); 
